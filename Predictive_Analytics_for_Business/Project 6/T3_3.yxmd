@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ExistingStoresForecastSales.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="Sub_Period" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="forecast" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="forecast_high_95" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="forecast_high_80" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="forecast_low_80" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+            <Field name="forecast_low_95" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\ExistingStoresForecastSales.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\NewStoresForecastSales.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>NewStoresForecastSales.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\NewStoresForecastSales.csv" type="V_String" />
+            <Field name="Sub_Period" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\NewStoresForecastSales.csv" type="V_String" />
+            <Field name="Sum_forecast" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\NewStoresForecastSales.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="forecast" selected="True" type="Double" size="8" description="Existing stores sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_forecast" selected="True" type="Double" size="8" description="New stores sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>HistoricalSalesData.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Dry_Grocery" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Dairy" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Frozen_Food" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Meat" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Produce" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Floral" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Deli" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_Bakery" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Sum_General_Merchandise" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="Total_sales" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Dry_Grocery" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Dairy" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Frozen_Food" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Meat" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Produce" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Floral" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Deli" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_Bakery" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+            <Field name="%_General_Merchandise" size="254" source="File: C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\HistoricalSalesData.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="222" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Sum_Produce" action="Sum" rename="Sum_Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_Produce" selected="True" type="Double" size="8" />
+            <SelectField field="Total_sales" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="294" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Month]+&quot;-&quot;+[Year]" field="Date" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;Old&quot;" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = [Month]+"-"+[Year]
+Type = "Old"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date2" selected="False" rename="Date" type="V_String" size="10" />
+            <SelectField field="Month" selected="False" />
+            <SelectField field="Year" selected="False" />
+            <SelectField field="Sum_Total_sales" selected="False" rename="Sales" />
+            <SelectField field="Date" selected="True" type="V_String" size="1073741823" />
+            <SelectField field="Type" selected="True" />
+            <SelectField field="Sum_Sum_Produce" selected="True" rename="Sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sub_Period]+&quot;-&quot;+[Period]" field="Date" size="2147483647" type="V_String" />
+            <FormulaField expression="&quot;New&quot;" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = [Sub_Period]+"-"+[Period]
+Type = "New"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sub_Period]+&quot;-&quot;+[Period]" field="Date" size="1073741823" type="V_WString" />
+            <FormulaField expression="&quot;Current&quot;" field="Type" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = [Sub_Period]+"-"+[Period]
+Type = "Current"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date" selected="True" size="10" />
+            <SelectField field="Type" selected="True" />
+            <SelectField field="Sum_forecast" selected="True" rename="Sales" />
+            <SelectField field="Date2" selected="False" rename="Date" />
+            <SelectField field="Sub_Period" selected="False" />
+            <SelectField field="Period" selected="False" />
+            <SelectField field="Date1" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date" selected="True" type="V_String" size="10" />
+            <SelectField field="Type" selected="True" />
+            <SelectField field="forecast" selected="True" rename="Sales" />
+            <SelectField field="Date2" selected="False" rename="Date" />
+            <SelectField field="Sub_Period" selected="False" />
+            <SelectField field="forecast_high_95" selected="False" />
+            <SelectField field="forecast_high_80" selected="False" />
+            <SelectField field="forecast_low_80" selected="False" />
+            <SelectField field="forecast_low_95" selected="False" />
+            <SelectField field="Period" selected="False" />
+            <SelectField field="Date1" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="594" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="678" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\ciprian.dascalu\Downloads\SKH\Udacity\Statistics\Nanodegree\P6\All Project Files\FinalSales.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FinalSales.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Type" selected="False" />
+            <SelectField field="Sales" selected="True" rename="Existing stores sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Type" selected="False" />
+            <SelectField field="Sales" selected="True" rename="New stores sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="690" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Date" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Date" selected="False" rename="Right_Date" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="786" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\CIPRIA~1.DAS\AppData\Local\Temp\Engine_10488_943f64b3e9564f8591e323e7097a7f67_\Engine_13344_359ecc9a7a8c4400bcafeeaa1f677341_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Join" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>T3_3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
